@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portofolio Web Developer - Menampilkan proyek dan keahlian pengembangan web.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/emailjs.min.js"></script>
+    <title>Portofolio Saya | Pemelajar Web</title>
+</head>
+<body>
+    <div class="nav-overlay" id="nav-overlay"></div>
+    <nav class="navbar">
+        <a href="#home" class="logo"><span>Portfolio</span></a>
+        <button class="menu-toggle" id="mobile-menu" aria-label="Buka Menu" aria-expanded="false">
+            <span class="hamburger-line line-1"></span>
+            <span class="hamburger-line line-2"></span>
+            <span class="hamburger-line line-3"></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#skills">Keahlian</a></li>
+            <li><a href="#projects">Proyek</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero reveal">
+        <img src="img/Gambar WhatsApp 2025-09-18 pukul 13.29.37_fcbcd59b.jpg" alt="Foto Profil" class="profile-img">
+        <h1 id="greeting">Halo, Selamat Datang!</h1>
+        <p>Saya adalah seorang <span>Pemelajar Web</span> yang sedang mendalami HTML, CSS, dan JavaScript.</p>
+        <a href="#projects" class="btn-primary">Lihat Proyek Saya</a>
+    </header>
+
+    <section id="about" class="container reveal">
+        <h2>Tentang Saya</h2>
+        <p>Saat ini saya sedang menempuh perjalanan untuk menjadi seorang Frontend Developer. Saya senang membangun hal-hal baru di web dan terus belajar setiap hari.</p>
+    </section>
+
+    <section id="skills" class="container reveal">
+        <h2>Keahlian</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <i class="fa-brands fa-html5"></i>
+                <span>HTML5</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-brands fa-css3-alt"></i>
+                <span>CSS3</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-brands fa-js"></i>
+                <span>JavaScript</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-brands fa-github"></i>
+                <span>Git/Github</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container reveal">
+        <h2>Proyek Belajar</h2>
+        <div class="project-grid">
+            <div class="card">
+                <h3>Project Shop Food</h3>
+                <p>Proyek aplikasi toko makanan yang dibangun untuk melatih struktur HTML dan styling CSS.</p>
+                <a href="https://giripurwantoro06-commits.github.io/Giri-ProjectShopFood/" target="_blank" class="project-link">Lihat Project <i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="card">
+                <h3>Project Toko Roti</h3>
+                <p>Website toko roti dengan antarmuka responsif dan fokus pada pengalaman pengguna.</p>
+                <a href="https://giripurwantoro06-commits.github.io/ProjectTokoroti/" target="_blank" class="project-link">Lihat Project <i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container reveal">
+        <h2>Kontak</h2>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <p>Tertarik untuk bekerja sama atau sekadar menyapa? Silakan hubungi saya melalui formulir atau media sosial berikut.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>giripurwantoro06@gmail.com</span>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/giripurwantoro06-commits" target="_blank" aria-label="Github"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Portofolio</p>
+        <div class="icon-bar">
+            <a href="https://github.com/giripurwantoro06-commits" aria-label="Github"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:giripurwantoro06@gmail.com" aria-label="Envelope"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <a href="#home" id="back-to-top" class="back-to-top" aria-label="Kembali ke atas">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
