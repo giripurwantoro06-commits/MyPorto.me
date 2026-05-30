@@ -117,16 +117,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const backToTopBtn = document.getElementById('back-to-top');
 
     // Gabungkan semua event listener scroll ke dalam satu fungsi untuk performa lebih baik
+    let isScrolling = false;
     window.addEventListener('scroll', () => {
-        // Shadow Navbar
-        navbar.classList.toggle('scrolled', window.scrollY > 50);
-        
-        // Back to Top Button
-        backToTopBtn.classList.toggle('show', window.scrollY > 400);
-        
-        // Active Link Highlight
-        setActiveLink();
+        if (!isScrolling) {
+            window.requestAnimationFrame(() => {
+                // Shadow Navbar
+                navbar.classList.toggle('scrolled', window.scrollY > 50);
+                
+                // Back to Top Button
+                backToTopBtn.classList.toggle('show', window.scrollY > 400);
+                
+                // Active Link Highlight
+                setActiveLink();
+                isScrolling = false;
+            });
+            isScrolling = true;
+        }
     });
+
     window.addEventListener('load', setActiveLink); // Set active link on page load
 
     // Penanganan Formulir Kontak
